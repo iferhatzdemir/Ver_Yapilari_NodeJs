@@ -22,10 +22,10 @@ insertionSort(inputArr);*/
 
 function insertionSort(inputArr) {
     let n = inputArr.length;
-        for (let i = 1; i < n; i++) {
+        for (let i = 1; i < 4n; i++) {
             
             let current = inputArr[i];
-            /
+            
             let j = i-1; 
             while ((j > -1) && (current < inputArr[j])) {
                 inputArr[j+1] = inputArr[j];
