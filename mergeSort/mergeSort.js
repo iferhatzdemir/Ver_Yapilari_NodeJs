@@ -1,11 +1,11 @@
 function merge(left, right) {
     let arr = []
     while (left.length && right.length) {
-        if (left[0] < right[0]) {
-            arr.push(left.shift());
+        if (left[0] < right[0]) { //ikiye bölündükten sonra soldaki dizinin ilk elemanı sağdaki dizinin ilk elemanından büyük karşılaştırması yapılıyor
+            arr.push(left.shift()); //büyükse sola
             console.log("Left :"+left);
         } else {
-            arr.push(right.shift()) 
+            arr.push(right.shift()) // küçükse sağ diziye ekleniyor
             console.log("Right"+right)
         }
         console.log("Array :"+arr);
